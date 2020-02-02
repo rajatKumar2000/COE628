@@ -79,14 +79,15 @@ int main(int argc, char** argv)
         {
             indexNumber = 0;
             
-            while(command[indexNumber] != NULL)
+            while(*argPointer[argPointerIndexNumber] != NULL)
             {
-                argPointer[argPointerIndexNumber] = argPointer[argPointerIndexNumber] + indexNumber;
                 executingCommand[indexNumber] = *argPointer[argPointerIndexNumber];
+                argPointer[argPointerIndexNumber] = argPointer[argPointerIndexNumber] + 1;
+                
                 //printf("%c\n", executingCommand[indexNumber]);
                 indexNumber++;
             }
-            
+            executingCommand[indexNumber] = NULL;
             system(executingCommand);
         }
         
