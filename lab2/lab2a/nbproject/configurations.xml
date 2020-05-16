@@ -4,7 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>pri_queque.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,7 +13,6 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
-      <itemPath>pri_queue.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -32,17 +30,16 @@
   <confs>
     <conf name="Debug" type="1">
       <toolsSet>
-        <compilerSet>Cygwin|Cygwin</compilerSet>
+        <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <standard>3</standard>
+        </cTool>
       </compileType>
       <item path="main.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="pri_queque.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="pri_queue.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -54,6 +51,7 @@
       <compileType>
         <cTool>
           <developmentMode>5</developmentMode>
+          <standard>3</standard>
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
@@ -66,10 +64,6 @@
         </asmTool>
       </compileType>
       <item path="main.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="pri_queque.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="pri_queue.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

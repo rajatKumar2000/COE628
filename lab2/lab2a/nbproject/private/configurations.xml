@@ -24,9 +24,18 @@
       </nativedebugger>
       <runprofile version="9">
         <runcommandpicklist>
-          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" bye</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" bye foo</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello foo</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello &amp;&amp; bye </runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello foo &amp;&amp; bye smith</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello foo </runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello john smith &amp;&amp; bye foo</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello "john smith" &amp;&amp; bye foo</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello "john smith" &amp;&amp; bye foo &amp;&amp; bye aq</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" hello "john smith" &amp;&amp; bye foo </runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <runcommand>"${OUTPUT_PATH}" hello "john smith" &amp;&amp; bye foo</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>
